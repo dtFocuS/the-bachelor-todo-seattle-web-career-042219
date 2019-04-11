@@ -11,9 +11,12 @@ end
 
 def get_contestant_name(data, occupation)
   # code here
-  data.each do |season, contestant|
-    contestant.each do |category, value|
-      
+  target_name = ""
+  data.each do |season, contestant| #contestant = [{}, {}]
+    contestant.each do |individual|
+      individual.each do |category, value|
+        target_name = individual["name"]
+      end
     end
   end
 end
