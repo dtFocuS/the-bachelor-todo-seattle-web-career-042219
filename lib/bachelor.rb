@@ -38,7 +38,7 @@ end
 def get_occupation(data, hometown)
   # code here
   appearance = false 
-  target_name = ""
+  target_occupation = ""
   data.each do |season, contestant|
     contestant.each do |individual|
       individual.each do |category, value|
