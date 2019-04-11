@@ -37,7 +37,15 @@ end
 
 def get_occupation(data, hometown)
   # code here
-  
+  appearance = 0 
+  target_name = ""
+  data.each do |season, contestant|
+    contestant.each do |individual|
+      individual.each do |category, value|
+        target_name = individual["name"] if value == hometown && appearance == 
+      end
+    end
+  end
 end
 
 def get_average_age_for_season(data, season)
