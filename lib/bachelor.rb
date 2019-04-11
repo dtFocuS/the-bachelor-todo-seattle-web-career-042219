@@ -44,7 +44,7 @@ def get_occupation(data, hometown)
       individual.each do |category, value|
         if value == hometown && appearance == 0
           target_name = individual["name"]
-          appearance += 1
+          appearance = 1
         end
       end
     end
