@@ -42,7 +42,7 @@ def get_occupation(data, hometown)
   data.each do |season, contestant|
     contestant.each do |individual|
       individual.each do |category, value|
-        if value == hometown && appearance == false
+        if value == hometown && appearance! #== false
           target_occupation = individual["occupation"]
           appearance = true
         end
